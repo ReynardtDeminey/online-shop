@@ -1,12 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./home/static/home.css">
-</head>
-<body>
-    <h1>Hello from the Cart BluePrint!</h1>
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="jumbotron w-50 mx-auto">
+    <div class="card mb-3" style="max-width: 870px;">
+        <div class="row no-gutters">
+          <div class="col-md-2">
+            <img src="..." class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <div class="col-md-2">
+                <img src="..." class="card-img" alt="...">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-success">Proceed to checkout</button>
+    </div>
+</div>
+
+{% endblock %}
+
+
